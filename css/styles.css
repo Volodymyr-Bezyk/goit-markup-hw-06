@@ -557,8 +557,60 @@ body {
 .footer-socials:focus {
   background-color: var(--hover-color);
 }
-
 .footer-socials-icon {
+  fill: #ffffff;
+}
+.footer-form {
+  padding-top: 12px;
+  padding-bottom: 34px;
+  margin-left: 93px;
+}
+.footer-input {
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  outline: none;
+
+  color: var(--secondary-title-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input ::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-field:focus-within .footer-input {
+  border-color: var(--hover-color);
+}
+.subscribe-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
+  padding: 10px 28px 10px 29px;
+  background-color: var(--secondary-btn-bgc-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-btn-text-color);
+  transition: var(--bgc-transition);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--hero-btn-hover-bgc);
+}
+.footer-send-icon {
+  margin-left: 10px;
   fill: #ffffff;
 }
 /*---------------------- FOOTER STYLES END ---------------------------- */
@@ -610,6 +662,10 @@ body {
   right: 8px;
   width: 30px;
   height: 30px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: #ffffff62;
   padding: 6px;
@@ -679,6 +735,12 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  outline: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-field:focus-within .modal-input {
+  border-color: var(--hover-color);
 }
 .modal-input-thumb {
   display: block;
@@ -701,8 +763,10 @@ body {
   height: 15px;
   border-radius: 2px;
   border: 1.8px solid #212121;
+  background-color: transparent;
+
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), var(--bgc-transition);
 }
 .modal-user-agreement:checked + .modal-check {
   background-image: url(../images/optimize-svg/icon-check.svg);
