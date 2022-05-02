@@ -675,17 +675,11 @@ body {
 
   transition: var(--bgc-transition);
 }
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 .modal-btn-icon {
-  transform: scale(1);
-  transition: var(--transform-transition), var(--fill-transition);
+  transition: var(--fill-transition);
 }
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon {
-  transform: scale(1.1);
   fill: var(--hover-color);
 }
 .modal-title {
@@ -698,20 +692,23 @@ body {
   margin-bottom: 12px;
 }
 .modal-form {
-  padding-top: 18px;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 .modal-field {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 
   color: var(--text-color);
+}
+.label-name {
+  display: block;
+  margin-bottom: 4px;
 }
 .modal-field > textarea {
   resize: none;
